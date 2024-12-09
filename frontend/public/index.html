@@ -1,43 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ポートフォリオ - システムエンジニア</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">My Portfolio</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">私について</a></li>
+					<li><a href="#hobby">趣味</a></li>
+					<li><a href="#blog">ブログ</a></li>
+					<li><a href="#contact">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="hero" data-aos="fade-up">
+		<div class="hero-container">
+			<img src="hero-image.jpg" alt="ヒーロー画像" class="hero-image">
+		</div>
+	</section>
+	<main>
+		<section id="about" data-aos="fade-right">
+			<div class="container">
+				<h2><i class="fas fa-user"></i> 私について</h2>
+				<p>31歳のエンジニアで、8年7ヶ月の経験があります。最新技術を使って課題を解決するのが得意です。</p>
+				<div class="profile-image">
+					<img src="profile.jpg" alt="プロフィール写真">
+				</div>
+			</div>
+		</section>
+		<section id="hobby" data-aos="fade-left">
+			<div class="container">
+				<h2><i class="fas fa-heart"></i> 趣味</h2>
+				<div class="hobby-list">
+					<div class="hobby-item">
+						<i class="fas fa-tv"></i>
+						<h3>アニメ鑑賞</h3>
+						<p>心を癒す時間。おすすめ作品のレビューも公開中！</p>
+					</div>
+					<div class="hobby-item">
+						<i class="fas fa-gamepad"></i>
+						<h3>ゲーム</h3>
+						<p>ドラゴンクエストシリーズの熱狂的なファンです。</p>
+					</div>
+					<div class="hobby-item">
+						<i class="fas fa-plane"></i>
+						<h3>旅行</h3>
+						<p>家族と共に新しい場所を探索するのが楽しみです。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="blog" data-aos="zoom-in">
+			<div class="container">
+				<h2><i class="fas fa-blog"></i> ブログ</h2>
+				<div class="blog-grid">
+					<div class="blog-card" data-aos="flip-left">
+						<img src="blog1.jpg" alt="ブログ記事1">
+						<h3>最新技術レビュー</h3>
+						<p>ReactやSpring Bootの新機能を探る記事。</p>
+					</div>
+					<div class="blog-card" data-aos="flip-right">
+						<img src="blog2.jpg" alt="ブログ記事2">
+						<h3>アニメレビュー</h3>
+						<p>今期のアニメの中で特におすすめの作品。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" data-aos="fade-up">
+			<div class="container">
+				<h2><i class="fas fa-envelope"></i> お問い合わせ</h2>
+				<p>以下のフォームからお気軽にご連絡ください。</p>
+				<form action="#" method="post" class="contact-form">
+					<div class="form-group">
+						<input type="text" name="name" placeholder="名前" required>
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" placeholder="メールアドレス" required>
+					</div>
+					<div class="form-group">
+						<textarea name="message" placeholder="メッセージ" required></textarea>
+					</div>
+					<button type="submit" class="btn">送信</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&copy; 2024 私のポートフォリオ. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200,
+			once: true
+		});
+	</script>
+</body>
 </html>
