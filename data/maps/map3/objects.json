@@ -1,0 +1,96 @@
+[
+  {
+    "prefix": "A",
+    "backgroundImage": "o",
+    "imagePath": "/tiles/food.png",
+    "name": "食べ物",
+    "dialogs": [
+      [
+        "これは？ジャガイモかな……？"
+      ]
+    ]
+  },{
+    "prefix": "B",
+    "backgroundImage": "o",
+    "imagePath": "/tiles/food2.png",
+    "name": "ステーキ",
+    "dialogs": [
+      [
+        "ステーキだ！すごく美味しそう……！"
+      ]
+    ]
+  },{
+    "prefix": "C",
+    "backgroundImage": "o",
+    "imagePath": "/tiles/food3.png",
+    "name": "魚料理",
+    "dialogs": [
+      [
+        "大人になってから魚料理の良さに気づいたなぁ..."
+      ]
+    ]
+  },{
+    "prefix": "D",
+    "backgroundImage": "r",
+    "imagePath": "/tiles/food4.png",
+    "name": "オムライス",
+    "dialogs": [
+      [
+        "ふわふわたまごのオムライスだ！"
+      ]
+    ]
+  },{
+    "prefix": "E",
+    "backgroundImage": "r",
+    "imagePath": "/tiles/food5.png",
+    "name": "スープ",
+    "dialogs": [
+      [
+        "熱々のスープは最高だよね！"
+      ]
+    ]
+  },{
+    "prefix": "F",
+    "backgroundImage": "r",
+    "imagePath": "/tiles/food6.png",
+    "name": "カレーライス",
+    "dialogs": [
+      [
+        "みんな大好きカレーライス！"
+      ]
+    ]
+  },{
+    "prefix": "G",
+    "backgroundImage": "u",
+    "imagePath": "/tiles/food7.png",
+    "name": "ケーキ",
+    "dialogs": [
+      [
+        "結局いちごのショートケーキが一番！"
+      ]
+    ]
+  },{
+    "prefix": "H",
+    "backgroundImage": "b",
+    "images": ["/tiles/vase.png"],
+    "name": "花瓶",
+    "item": {
+      "id": "photo2",
+      "name": "写真２",
+      "imagePath": "/items/photo2.png",
+      "description": "愛犬のポメラニアン、そらの写真。",
+      "details": [
+        "とてもかわいい。あおの弟。"
+      ]
+    },
+    "dialogs": [
+      [
+        "花瓶を調べた",
+        "【写真２】を手に入れた！"
+      ],
+      [
+        "他にはなにもないようだ……"
+      ]
+    ]
+  }
+]

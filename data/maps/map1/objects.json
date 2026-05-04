@@ -1,0 +1,93 @@
+[
+  {
+    "prefix": "A",
+    "backgroundImage": "a",
+    "imagePath": "/tiles/signboard.png",
+    "name": "看板",
+    "dialogs": [
+      [
+        "ここはNOBBYのポートフォリオの世界！ゆっくりしていってね！"
+      ]
+    ]
+  },
+  {
+    "prefix": "B",
+    "backgroundImage": "a",
+    "images": ["/tiles/chest.png", "/tiles/chest_open.png"],
+    "name": "宝箱",
+    "item": {
+      "id": "links",
+      "name": "リンク集",
+      "description": "NOBBYのリンク集。各種URLが記されている。",
+      "details": [
+        "GitHub : github.com/GondaNobuhiro",
+        "X  : x.com/nobby780",
+        "Mail  : 4645n.g0708@gmail.com"
+      ]
+    },
+    "dialogs": [
+      [
+        "宝箱を調べた",
+        "【リンク集】を手に入れた！"
+      ],
+      [
+        "宝箱はすでに開けられている……"
+      ]
+    ]
+  },{
+    "prefix": "C",
+    "backgroundImage": "a",
+    "imagePath": "/tiles/sword.png",
+    "name": "勇者の剣",
+    "dialogs": [
+      [
+        "剣を調べた",
+        "勇者じゃないので、剣は地面から抜けないようだ……"
+      ]
+    ]
+  },{
+    "prefix": "D",
+    "backgroundImage": "a",
+    "imagePath": "/tiles/board_information.png",
+    "name": "看板",
+    "dialogs": [
+      [
+        "→ゲームの世界",
+        "←現実の世界"
+      ]
+    ]
+  },{
+  "prefix": "E",
+  "backgroundImage": "a",
+  "imagePath": "/tiles/well.png",
+  "name": "井戸",
+  "dialogs": [
+    [
+      "井戸だ。入る理由は無いかな……"
+    ]
+  ]
+},{
+  "prefix": "F",
+  "backgroundImage": "b",
+  "images": ["/tiles/vase.png"],
+  "name": "壺",
+  "item": {
+    "id": "photo2",
+    "name": "写真２",
+    "imagePath": "/items/photo2.png",
+    "description": "愛犬のポメラニアン、そらの写真。",
+    "details": [
+      "とてもかわいい。あおの弟。"
+    ]
+  },
+  "dialogs": [
+    [
+      "花瓶を調べた",
+      "【写真２】を手に入れた！"
+    ],
+    [
+      "他にはなにもないようだ……"
+    ]
+  ]
+}
+]

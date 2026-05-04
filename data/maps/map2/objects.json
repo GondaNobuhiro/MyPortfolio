@@ -1,0 +1,59 @@
+[
+  {
+    "prefix": "A",
+    "backgroundImage": "b",
+    "images": ["/tiles/shelf.png"],
+    "name": "棚",
+    "item": {
+      "id": "photo1",
+      "name": "写真１",
+      "imagePath": "/items/photo1.png",
+      "description": "愛犬のポメラニアン、あおの写真。",
+      "details": [
+        "とてもかわいい。そらの兄。"
+      ]
+    },
+    "dialogs": [
+      [
+        "棚を調べた",
+        "【写真１】を手に入れた！"
+      ],
+      [
+        "他にはなにもないようだ……"
+      ]
+    ]
+  },
+  {
+    "prefix": "B",
+    "backgroundImage": "b",
+    "images": ["/tiles/pot.png"],
+    "name": "壺",
+    "item": {
+      "id": "medal",
+      "name": "ちいさなメダル",
+      "description": "キラキラかがやくメダル。",
+      "details": [
+        "この世界のどこかに集めている人がいるとかいないとか。"
+      ]
+    },
+    "dialogs": [
+      [
+        "壺を調べた",
+        "ちいさなメダルを手に入れた！"
+      ],
+      [
+        "他にはなにもないようだ……"
+      ]
+    ]
+  },{
+  "prefix": "C",
+  "backgroundImage": "a",
+  "imagePath": "/tiles/clock.png",
+  "name": "時計",
+  "dialogs": [
+    [
+      "もうすぐ仕事の時間だ……"
+    ]
+  ]
+}
+]

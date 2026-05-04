@@ -1,0 +1,17 @@
+[
+  { "prefix": "a", "imagePath": "/tiles/brick_middle.png", "walkable": false },
+  { "prefix": "b", "imagePath": "/tiles/flooring.png", "walkable": true  },
+  {
+    "prefix": "c",
+    "imagePath": "/tiles/door_high.png",
+    "walkable": true,
+    "backgroundImage": "a",
+    "targetMap": "map1",
+    "targetPos": { "x": 5, "y": 14 }
+  },
+  { "prefix": "d", "imagePath": "/tiles/table.png",   "walkable": false, "backgroundImage": "b" },
+  { "prefix": "e", "imagePath": "/tiles/chair.png", "walkable": true, "backgroundImage": "b"  },
+  { "prefix": "f", "imagePath": "/tiles/bed_high.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "g", "imagePath": "/tiles/bed_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "h", "imagePath": "/tiles/vase.png", "walkable": false, "backgroundImage": "b"  }
+]

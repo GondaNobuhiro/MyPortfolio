@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# environment variables (APIキーなどを含む — 絶対にコミットしない)
+.env
+.env.local
+.env*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Claude Code
+.claude/
+
+# misc
+*.tsbuildinfo

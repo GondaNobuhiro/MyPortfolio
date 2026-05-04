@@ -1,0 +1,53 @@
+[
+  {
+    "prefix": "1",
+    "backgroundImage": "g",
+    "imagePath": "/sprites/npc/elf.png",
+    "name": "店主",
+    "dialogs": [
+      [
+        "いらっしゃいませ〜！",
+        "色々な料理を用意しているので、ぜひ食べていってくださいね！"
+      ],
+      [
+        "この世界の食べ物は、現実の世界の食べ物よりも美味しいんですよ！"
+      ]
+    ]
+  },
+  {
+    "prefix": "2",
+    "backgroundImage": "b",
+    "imagePath": "/sprites/npc/oldman.png",
+    "name": "熟練冒険者",
+    "dialogs": [
+      [
+        "武闘家の仲間を探しているんだが、なかなか見つからなくてね...",
+        "君の職業は何だい？"
+      ],[
+        "システムエンジニア？",
+        "聞いたことのない職業だなぁ..."
+      ]
+    ]
+  },{
+    "prefix": "3",
+    "backgroundImage": "b",
+    "imagePath": "/sprites/npc/princess.png",
+    "name": "王妃",
+    "dialogs": [
+      [
+        "わらわはこの国の王妃じゃ。",
+        "たまには庶民の味を楽しむのもいいものじゃな"
+      ]
+    ]
+  },{
+    "prefix": "4",
+    "backgroundImage": "b",
+    "imagePath": "/sprites/npc/oldwoman.png",
+    "name": "老婆",
+    "dialogs": [
+      [
+        "ここの魚料理はとても美味しいのぉ"
+      ]
+    ]
+  }
+]

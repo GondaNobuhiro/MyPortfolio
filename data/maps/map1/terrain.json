@@ -1,0 +1,38 @@
+[
+  { "prefix": "a", "imagePath": "/tiles/grass.png",  "walkable": true },
+  { "prefix": "b", "imagePath": "/tiles/flower.png", "walkable": true, "backgroundImage": "a"  },
+  { "prefix": "c", "imagePath": "/tiles/tree.png",   "walkable": false, "backgroundImage": "a" },
+  { "prefix": "d", "imagePath": "/tiles/wall.png",   "walkable": false },
+  { "prefix": "e", "imagePath": "/tiles/water.png",  "walkable": false },
+  { "prefix": "f", "imagePath": "/tiles/bridge.png", "walkable": true  },
+  {
+    "prefix": "G",
+    "imagePath": "/tiles/door_under.png",
+    "walkable": true,
+    "backgroundImage": "l",
+    "targetMap": "map2",
+    "targetPos": { "x": 4, "y": 7 }
+  },
+  {
+    "prefix": "H",
+    "imagePath": "/tiles/door_under.png",
+    "walkable": true,
+    "backgroundImage": "l",
+    "targetMap": "map3",
+    "targetPos": { "x": 7, "y": 9 }
+  },
+  { "prefix": "i", "imagePath": "/tiles/brick_middle.png", "walkable": false  },
+  { "prefix": "j", "imagePath": "/tiles/roof.png", "walkable": false  },
+  { "prefix": "k", "imagePath": "/tiles/signboard_food.png", "walkable": false, "backgroundImage": "i"   },
+  { "prefix": "l", "imagePath": "/tiles/brick_under.png", "walkable": false  },
+  { "prefix": "m", "imagePath": "/tiles/door_high.png", "walkable": false, "backgroundImage": "i"  },
+  { "prefix": "n", "imagePath": "/tiles/load.png",  "walkable": true },
+  { "prefix": "o", "imagePath": "/tiles/pot2.png", "walkable": false, "backgroundImage": "a"  },
+  { "prefix": "p", "imagePath": "/tiles/ax.png", "walkable": false, "backgroundImage": "a"  },
+  { "prefix": "q", "imagePath": "/tiles/firewood.png", "walkable": false, "backgroundImage": "a"  },
+  { "prefix": "r", "imagePath": "/tiles/bucket.png", "walkable": false, "backgroundImage": "a"  },
+  { "prefix": "s", "imagePath": "/tiles/grass2.png", "walkable": true, "backgroundImage": "a"  },
+  { "prefix": "t", "imagePath": "/tiles/grass3.png", "walkable": true, "backgroundImage": "a"  },
+  { "prefix": "u", "imagePath": "/tiles/woodenbox.png", "walkable": false, "backgroundImage": "a"  },
+  { "prefix": "v", "imagePath": "/tiles/stump.png", "walkable": false, "backgroundImage": "a"  }
+]

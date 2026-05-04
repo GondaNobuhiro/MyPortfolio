@@ -1,0 +1,87 @@
+[
+  {
+    "prefix": "1",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/elder.png",
+    "name": "長老",
+    "dialogs": [
+      [
+        "ようこそ、NOBBYのポートフォリオの世界へ！",
+        "わしはこの村の長老じゃ。",
+        "この空間は現実とゲームの世界の狭間に位置しておる。"
+      ],
+      [
+        "看板や宝箱など色々と調べてみるとよいぞ。"
+      ]
+    ]
+  },
+  {
+    "prefix": "2",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/mage.png",
+    "name": "魔法使い",
+    "dialogs": [
+      [
+        "わたしは魔法使いよ。",
+        "ファイヤーやサンダーの魔法が使えるわ！",
+        "あなたはどんなスキルを使えるの？"
+      ],
+      [
+        "リアクト？スプリングブート？",
+        "そんなスキルがあるのね……！ すごいわ！"
+      ]
+    ]
+  },
+  {
+    "prefix": "3",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/warrior.png",
+    "name": "剣士",
+    "dialogs": [
+      [
+        "おお、お前も魔王を倒しに旅へ出るのか？",
+        "今から仕事をしに会社に行くだと？",
+        "おぉそれは邪魔をしたな。。。"
+      ],
+      [
+        "俺も魔王を倒す旅なんてやめて真面目に働くべきかな。。。"
+      ]
+    ]
+  },
+  {
+    "prefix": "4",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/merchant.png",
+    "name": "タロウ",
+    "dialogs": [
+      [
+        "ゲームの世界に紛れ込んでしまったみたいなんだ...",
+        "現実の世界に帰る方法を知らない？"
+      ]
+    ]
+  },
+  {
+    "prefix": "5",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/mysteriousman.png",
+    "name": "謎の男",
+    "dialogs": [
+      [
+        "君にはこの剣が抜けるかな？"
+      ]
+    ]
+  },{
+    "prefix": "6",
+    "backgroundImage": "a",
+    "imagePath": "/sprites/npc/skeleton.png",
+    "name": "スケルトン",
+    "dialogs": [
+      [
+        "返事がない。ただの屍のようだ。"
+      ],
+      [
+        "嘘でーすwww生きてますよーwww"
+      ]
+    ]
+  }
+]

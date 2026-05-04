@@ -1,0 +1,31 @@
+[
+  { "prefix": "a", "imagePath": "/tiles/brick_middle.png", "walkable": false },
+  { "prefix": "b", "imagePath": "/tiles/flooring.png", "walkable": true  },
+  {
+    "prefix": "c",
+    "imagePath": "/tiles/door_high.png",
+    "walkable": true,
+    "backgroundImage": "a",
+    "targetMap": "map1",
+    "targetPos": { "x": 7, "y": 5 }
+  },
+  { "prefix": "d", "imagePath": "/tiles/table2.png",   "walkable": false, "backgroundImage": "b" },
+  { "prefix": "e", "imagePath": "/tiles/chair2.png", "walkable": true, "backgroundImage": "b"  },
+  { "prefix": "f", "imagePath": "/tiles/store_left_middle.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "g", "imagePath": "/tiles/store_middle.png", "walkable": true, "backgroundImage": "b"  },
+  { "prefix": "h", "imagePath": "/tiles/store_right_middle.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "i", "imagePath": "/tiles/store_left_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "j", "imagePath": "/tiles/store_middle_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "k", "imagePath": "/tiles/store_right_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "l", "imagePath": "/tiles/woodenbox.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "m", "imagePath": "/tiles/pot2.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "n", "imagePath": "/tiles/table3_left_high.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "o", "imagePath": "/tiles/table3_left_middle.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "p", "imagePath": "/tiles/table3_left_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "q", "imagePath": "/tiles/table3_right_high.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "r", "imagePath": "/tiles/table3_right_middle.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "s", "imagePath": "/tiles/table3_right_under.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "t", "imagePath": "/tiles/table3_middle_high.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "u", "imagePath": "/tiles/table3_middle.png", "walkable": false, "backgroundImage": "b"  },
+  { "prefix": "v", "imagePath": "/tiles/table3_middle_under.png", "walkable": false, "backgroundImage": "b"  }
+]
