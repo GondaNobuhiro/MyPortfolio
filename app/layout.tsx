@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nobbys-portfolio.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 const title       = 'NOBBY | Portfolio';
 const description = 'システムエンジニア NOBBYのポートフォリオ。ドラクエ風RPGを探索しているような感覚で、これまでの経験やスキルを紹介しています。';
 
@@ -37,6 +37,11 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
   },
 };
 
