@@ -30,14 +30,14 @@ const HEADER_LABELS: Record<Tab, string> = {
 export default function StatusScreen({ screen, onClose, items }: StatusScreenProps) {
   const [tab, setTab]             = useState<Tab>('status');
   const [previewSrc, setPreviewSrc] = useState<string | null>(null);
-  const [form, setForm]           = useState({ name: '', email: '', message: '' });
+  const [form, setForm]           = useState({ name: '', email: '', message: '', botcheck: '' });
   const [sendStatus, setSendStatus] = useState<SendStatus>('idle');
 
   useEffect(() => {
     if (screen === 'game') {
       setTab('status');
       setPreviewSrc(null);
-      setForm({ name: '', email: '', message: '' });
+      setForm({ name: '', email: '', message: '', botcheck: '' });
       setSendStatus('idle');
     }
   }, [screen]);
@@ -56,6 +56,7 @@ export default function StatusScreen({ screen, onClose, items }: StatusScreenPro
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           subject: 'ポートフォリオからのお問い合わせ',
+          botcheck: form.botcheck,
           name: form.name,
           email: form.email,
           message: form.message,
@@ -239,13 +240,23 @@ export default function StatusScreen({ screen, onClose, items }: StatusScreenPro
                   <div className="text-xs text-gray-300">折り返しご連絡いたします。</div>
                   <button
                     className="mt-4 px-4 py-1 text-xs border border-blue-500 text-blue-300 hover:text-white hover:border-white"
-                    onClick={() => { setForm({ name: '', email: '', message: '' }); setSendStatus('idle'); }}
+                    onClick={() => { setForm({ name: '', email: '', message: '', botcheck: '' }); setSendStatus('idle'); }}
                   >
                     もう一度送る
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-3">
+                  {/* honeypot: bots fill this, humans don't — Web3Forms blocks the submission */}
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    style={{ display: 'none' }}
+                    tabIndex={-1}
+                    checked={form.botcheck === 'on'}
+                    onChange={e => setForm(f => ({ ...f, botcheck: e.target.checked ? 'on' : '' }))}
+                  />
+
                   <div className="text-xs text-blue-300 mb-3">
                     ご質問・ご連絡はこちらからどうぞ。
                   </div>
@@ -255,6 +266,7 @@ export default function StatusScreen({ screen, onClose, items }: StatusScreenPro
                     <input
                       type="text"
                       required
+                      maxLength={100}
                       value={form.name}
                       onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                       className="w-full bg-blue-900 border border-blue-600 text-white text-xs px-2 py-1.5 focus:outline-none focus:border-yellow-400"
@@ -267,6 +279,7 @@ export default function StatusScreen({ screen, onClose, items }: StatusScreenPro
                     <input
                       type="email"
                       required
+                      maxLength={200}
                       value={form.email}
                       onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                       className="w-full bg-blue-900 border border-blue-600 text-white text-xs px-2 py-1.5 focus:outline-none focus:border-yellow-400"
@@ -278,6 +291,7 @@ export default function StatusScreen({ screen, onClose, items }: StatusScreenPro
                     <label className="block text-xs text-blue-400 mb-1">お問い合わせ内容</label>
                     <textarea
                       required
+                      maxLength={2000}
                       value={form.message}
                       onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
                       rows={4}
