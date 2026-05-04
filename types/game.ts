@@ -68,7 +68,7 @@ export interface DialogState {
   sourceId?: string;
 }
 
-export type ScreenMode = 'game' | 'status' | 'skills';
+export type ScreenMode = 'game' | 'status';
 
 export interface GameState {
   mapId: string;
