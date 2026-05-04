@@ -1,7 +1,7 @@
 export const PLAYER_DATA = {
   name: 'NOBBY',
   job: 'システムエンジニア',
-  level: 32,
+  level: 10,
   hp: { current: 178, max: 178 },
   mp: { current: 68, max: 68 },
   stats: {
