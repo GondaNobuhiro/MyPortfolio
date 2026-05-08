@@ -82,7 +82,7 @@ export default function OpeningScreen({ onStart }: Props) {
           NOBBY&apos;S
         </div>
         <div className="text-white text-3xl md:text-5xl tracking-[0.2em] text-center drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]">
-          PORTFOLIO
+          ADVENTURE
         </div>
 
         {/* Divider */}
@@ -106,7 +106,7 @@ export default function OpeningScreen({ onStart }: Props) {
 
       {/* Copyright */}
       <div className="absolute bottom-6 text-gray-600 text-[8px] md:text-[10px] tracking-widest">
-        © 2024 NOBBY
+        © 2026 NOBBY
       </div>
 
       {/* Fade overlay */}
