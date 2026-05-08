@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface Props {
   onStart: () => void;
@@ -24,9 +24,10 @@ type Phase = 'logo' | 'ready' | 'fading';
 export default function OpeningScreen({ onStart }: Props) {
   const [phase, setPhase]           = useState<Phase>('logo');
   const [logoVisible, setLogoVisible] = useState(false);
-  const stars                        = useRef(generateStars()).current;
+  const [stars, setStars]            = useState<ReturnType<typeof generateStars>>([]);
 
   useEffect(() => {
+    setStars(generateStars());
     const t1 = setTimeout(() => setLogoVisible(true), 400);
     const t2 = setTimeout(() => setPhase('ready'), 2200);
     return () => { clearTimeout(t1); clearTimeout(t2); };
