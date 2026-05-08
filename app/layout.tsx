@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: siteUrl,
-    siteName: "NOBBY'S Portfolio",
+    siteName: "NOBBY'S Adventure",
     locale: 'ja_JP',
     type: 'website',
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "NOBBY'S Portfolio — ドラクエ風ポートフォリオ",
+        alt: "NOBBY'S Adventure",
       },
     ],
   },

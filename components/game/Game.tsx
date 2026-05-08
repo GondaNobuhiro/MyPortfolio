@@ -114,7 +114,7 @@ export default function Game() {
   return (
     <div className="flex flex-col items-center justify-center bg-black w-full" style={{ minHeight: '100dvh' }}>
       <div className="font-pixel text-yellow-300 text-xs mb-1 tracking-widest">
-        ～ NOBBY&apos;S PORTFOLIO ～
+        ～ NOBBY&apos;S ADVENTURE ～
       </div>
 
       {/* Outer wrapper: provides correct layout footprint for scaled content */}
